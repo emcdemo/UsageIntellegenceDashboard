@@ -1,0 +1,48 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+$navbar-inverse-bg: #2c95dd;
+$brand-primary : #2c95dd;
+$navbar-inverse-color : #fff;
+$navbar-inverse-link-color : #fff;
+
+$navbar-inverse-toggle-hover-bg:            transparent;
+$navbar-inverse-toggle-icon-bar-bg:         #fff;
+$navbar-inverse-toggle-border-color:        #fff;
+
+
+$border-radius-base : 0px;
+$border-radius-large : 0px;
+$border-radius-small : 0px;
+
+// bower:scss
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 99px;
+}
+
+.navbar-inverse
+{  
+    min-height:62px;
+box-shadow: 0px 3px 6px #ccc;
+-moz-box-shadow: 0px 3px 6px #ccc;
+-webkit-box-shadow: 0px 3px 6px #ccc;
+zoom: 1;
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3);
+}
+
+.uid-table th
+{
+    background: $brand-primary;
+    color: #fff;  
+}
+
+.canvasjs-chart-credit
+{
+    display:none;
+}
