@@ -14,9 +14,19 @@ $border-radius-base : 0px;
 $border-radius-large : 0px;
 $border-radius-small : 0px;
 
+$black : #787878;
+$panel-black-border : $black; 
+$panel-black-heading-bg : $black;
+$panel-black-text : #fff;
+
 // bower:scss
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
+
+.panel-black {
+  @include panel-variant($panel-black-border, $panel-black-text, $panel-black-heading-bg, $panel-black-border);
+}
+
 
 html,
 body {
@@ -45,4 +55,20 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135,
 .canvasjs-chart-credit
 {
     display:none;
+}
+
+tr.success, tr.warning, tr.danger
+{
+	font-weight: bold;
+}
+
+.help-block a
+{
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.modal-dialog
+{
+	width:90%;
 }
